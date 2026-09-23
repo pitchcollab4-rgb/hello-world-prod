@@ -1,10 +1,10 @@
-# FitSEO — Project Handoff
+# MintSEOPro — Project Handoff
 
 Read this file first to continue work on this project in a new Claude Code session.
 
 ## 1. What this project is
 
-**FitSEO** is a copy of [prepostseo.com](https://www.prepostseo.com/), a site with many free SEO and text tools, with a redesigned UI.
+**MintSEOPro** (formerly FitSEO) is a copy of [prepostseo.com](https://www.prepostseo.com/), a site with many free SEO and text tools, with a redesigned UI.
 - Repo: `pitchcollab4-rgb/hello-world-prod` (originally built in `nayakqche/prepostseo_project`)
 - Working branch: `claude/admiring-lamport-n22a9t`
 - UI: dark "Mint SaaS template" look (near-black surfaces, lime `#c5f82a` accent, grid texture, olive hero glow)
@@ -111,3 +111,11 @@ src/
 3. Add server-side routes (`src/app/api/...`) for the SSL, headers, redirect, status and DNS checkers.
 4. Consider rate limiting on `/api/ai` before deploying publicly, since it spends API credits.
 5. Deploy on Vercel and set `ANTHROPIC_API_KEY` in the project's environment variables.
+
+## 11. Hosting on Render
+
+`render.yaml` in the repo root is a Render Blueprint: a Node web service that runs `npm ci && npm run build` and then `npm start`. `next start` reads Render's `PORT` variable and listens on 0.0.0.0.
+1. Go to render.com, sign in with GitHub, and click **New → Blueprint**.
+2. Pick this repo and the branch you want to deploy.
+3. When it asks, paste your `ANTHROPIC_API_KEY`, then click **Apply**.
+4. Every push to that branch redeploys the site. On the free plan the site sleeps after about 15 minutes idle, so the first visit afterwards is slow (around 30–60 seconds).

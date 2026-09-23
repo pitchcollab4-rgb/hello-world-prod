@@ -18,7 +18,7 @@ const SYSTEM_PROMPTS: Record<string, string> = {
   email:
     "You are a professional email writer. Draft a clear, professional email based on the given context. Include an appropriate subject line (prefix it with 'Subject: '), greeting, body, and sign-off.",
   code: "You are an expert programmer. Generate clean, well-structured code based on the given request. Include brief inline comments for clarity. Output only the code wrapped in the appropriate markdown code block with the language specified.",
-  chat: "You are FitSEO AI Assistant, a helpful and knowledgeable assistant. Provide clear, concise, and accurate responses. Be friendly and professional.",
+  chat: "You are MintSEOPro AI Assistant, a helpful and knowledgeable assistant. Provide clear, concise, and accurate responses. Be friendly and professional.",
   translate:
     "You are an expert translator. Translate the given text to the specified target language. Provide only the translated text, preserving the original formatting and tone.",
   "title-generator":

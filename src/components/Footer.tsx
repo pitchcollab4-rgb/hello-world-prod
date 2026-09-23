@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted">
-          <p>&copy; {new Date().getFullYear()} FitSEO. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} MintSEOPro. All rights reserved.</p>
           <p>Built for the SEO community.</p>
         </div>
       </div>

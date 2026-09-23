@@ -14,7 +14,7 @@ export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
     <Link href="/" className="flex items-center gap-2">
       <LogoMark className={size === "lg" ? "w-7 h-7" : "w-6 h-6"} />
       <span className={`${size === "lg" ? "text-xl" : "text-lg"} font-bold tracking-tight text-foreground`}>
-        FitSEO
+        MintSEOPro
       </span>
     </Link>
   );

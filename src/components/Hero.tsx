@@ -26,7 +26,7 @@ export default function Hero({
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
             Streamline Your SEO
             <br />
-            with FitSEO
+            with MintSEOPro
           </h1>
 
           <p className="mt-5 text-base sm:text-lg text-muted max-w-xl mx-auto">

@@ -49,7 +49,7 @@ export default function DashboardPreview() {
           <aside className="hidden md:flex w-48 shrink-0 flex-col border-r border-border p-4 gap-1 text-xs">
             <div className="flex items-center gap-2 mb-4">
               <LogoMark className="w-5 h-5" />
-              <span className="font-bold">FitSEO</span>
+              <span className="font-bold">MintSEOPro</span>
             </div>
             <div className="mb-3 px-3 py-2 rounded-lg gradient-bg text-black font-semibold flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5" /> New Audit

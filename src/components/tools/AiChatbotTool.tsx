@@ -51,7 +51,7 @@ export default function AiChatbotTool() {
       <div className="h-96 overflow-y-auto bg-background border border-border rounded-xl p-4 space-y-4">
         {messages.length === 0 && (
           <div className="h-full flex items-center justify-center text-muted text-sm">
-            Start a conversation with FitSEO AI...
+            Start a conversation with MintSEOPro AI...
           </div>
         )}
         {messages.map((msg, i) => (

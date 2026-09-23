@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FitSEO - Free Online SEO Tools & Content Optimization",
+  title: "MintSEOPro - Free Online SEO Tools & Content Optimization",
   description: "100+ free SEO tools for content optimization, plagiarism checking, keyword analysis, and AI-powered writing. No signup required.",
 };
 

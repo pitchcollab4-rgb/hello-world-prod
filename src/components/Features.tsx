@@ -22,7 +22,7 @@ export default function Features() {
         <SectionHeading
           badge="Features"
           title={<>Cutting-edge Tools Designed<br className="hidden sm:block" /> to Boost Efficiency</>}
-          subtitle="A seamless experience with FitSEO: better rankings, cleaner content, and faster writing, all in one place."
+          subtitle="A seamless experience with MintSEOPro: better rankings, cleaner content, and faster writing, all in one place."
         />
 
         <div className="grid md:grid-cols-2 gap-5">
