@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* Mint-style dark theme: near-black surfaces with a lime accent */
+:root {
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
+  --primary: #c5f82a;
+  --primary-dark: #a6d81a;
+  --primary-light: #e1ff8a;
+  --secondary: #9be15d;
+  --accent: #facc15;
+  --surface: #141414;
+  --surface-hover: #1c1c1c;
+  --border: #262626;
+  --muted: #9b9b9b;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --gradient-start: #d4ff3f;
+  --gradient-end: #a6e21b;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--primary);
+  color: #0a0a0a;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+}
+
+/* Olive glow that sits behind the hero, like the Mint template */
+.hero-glow {
+  background:
+    radial-gradient(ellipse 60% 55% at 50% 0%, rgba(155, 190, 30, 0.45), transparent 70%),
+    radial-gradient(ellipse 35% 30% at 50% 0%, rgba(197, 248, 42, 0.25), transparent 70%);
+}
+
+/* Faint grid texture */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 40%, transparent 100%);
+}
+
+.dot-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+.card-glow {
+  box-shadow: 0 0 0 1px rgba(197, 248, 42, 0.35), 0 0 32px -4px rgba(197, 248, 42, 0.45);
+}
+
+.tool-card {
+  transition: all 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(197, 248, 42, 0.35);
+  box-shadow: 0 12px 32px -12px rgba(197, 248, 42, 0.25);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
